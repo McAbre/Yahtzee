@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="515.0" prefWidth="419.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yahtzee.FXMLDocumentController">
+    <children>
+      <AnchorPane fx:id="gamePane" layoutX="14.0" layoutY="163.0" prefHeight="330.0" prefWidth="401.0">
+         <children>
+            <HBox prefHeight="338.0" prefWidth="80.0">
+               <children>
+                  <VBox prefHeight="330.0" prefWidth="80.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="80.0" text="Spelare">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <Label prefHeight="17.0" prefWidth="80.0" text="Ettor" />
+                        <Label prefHeight="14.0" prefWidth="59.0" text="Tvåor" />
+                        <Label prefHeight="14.0" prefWidth="59.0" text="Treor" />
+                        <Label prefHeight="14.0" prefWidth="59.0" text="Fyror" />
+                        <Label prefHeight="14.0" prefWidth="59.0" text="Femmor" />
+                        <Label prefHeight="14.0" prefWidth="59.0" text="Sexor" />
+                        <Label prefHeight="20.0" prefWidth="81.0" text="Summa">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="14.0" prefWidth="59.0" text="Bonus" />
+                        <Label prefHeight="14.0" prefWidth="59.0" text="1 par" />
+                        <Label prefHeight="14.0" prefWidth="59.0" text="2 par" />
+                        <Label prefHeight="14.0" prefWidth="59.0" text="Triss" />
+                        <Label prefHeight="14.0" prefWidth="59.0" text="Fyrtal" />
+                        <Label prefHeight="17.0" prefWidth="76.0" text="Liten straight" />
+                        <Label prefHeight="17.0" prefWidth="81.0" text="Stor straight" />
+                        <Label prefHeight="17.0" prefWidth="81.0" text="Kåk" />
+                        <Label prefHeight="14.0" prefWidth="59.0" text="Chans" />
+                        <Label prefHeight="14.0" prefWidth="59.0" text="YATZY" />
+                        <Label prefHeight="20.0" prefWidth="80.0" text="Summa">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Line endX="400.0" strokeWidth="2.0" />
+            <Line endY="333.0" strokeWidth="2.0" />
+            <Line endX="80.0" layoutY="20.0" />
+            <Line endX="80.0" layoutY="37.0" />
+            <Line endX="80.0" layoutY="55.0" />
+            <Line endX="80.0" layoutY="72.0" />
+            <Line endX="80.0" layoutY="89.0" />
+            <Line endX="80.0" layoutY="106.0" />
+            <Line endX="80.0" layoutY="159.0" />
+            <Line endX="80.0" layoutY="176.0" />
+            <Line endX="80.0" layoutY="193.0" />
+            <Line endX="80.0" layoutY="210.0" />
+            <Line endX="80.0" layoutY="227.0" />
+            <Line endX="80.0" layoutY="244.0" />
+            <Line endX="80.0" layoutY="261.0" />
+            <Line endX="80.0" layoutY="278.0" />
+            <Line endX="80.0" layoutY="295.0" />
+            <Line endX="80.0" layoutY="312.0" />
+            <Line endX="80.0" layoutY="123.0" strokeWidth="2.0" />
+            <Line endX="80.0" layoutY="142.0" strokeWidth="2.0" />
+            <Line endX="400.0" endY="333.0" startY="333.0" strokeWidth="2.0" />
+            <Line endX="400.0" endY="333.0" startX="400.0" strokeWidth="2.0" />
+            <Line endX="80.0" endY="333.0" startX="80.0" strokeWidth="2.0" />
+         </children>
+      </AnchorPane>
+      <MenuBar fx:id="menuBar" layoutY="2.0" prefHeight="25.0" prefWidth="419.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Arkiv">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Chat">
+            <items>
+              <MenuItem fx:id="chatOpenButton" mnemonicParsing="false" onAction="#chatOpenAction" text="Open" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Hjälp">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Regler" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <RadioButton layoutX="8.0" layoutY="35.0" mnemonicParsing="false" text="Kasta snabbare" />
+      <HBox layoutX="8.0" layoutY="60.0" prefHeight="60.0" prefWidth="329.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c5c9cd" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c5c9cd" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c5c9cd" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c5c9cd" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c5c9cd" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Rectangle>
+         </children>
+      </HBox>
+      <Label layoutX="233.0" layoutY="42.0" prefHeight="20.0" prefWidth="69.0" text="Kast kvar:" textFill="#b90000">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Text fx:id="kastKvarField" layoutX="302.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="30.13671875" />
+      <Button layoutX="14.0" layoutY="125.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="68.0" text="Kasta [F5]" />
+      <Button layoutX="92.0" layoutY="125.0" mnemonicParsing="false" text="Spara [F8]" />
+      <Button layoutX="271.0" layoutY="125.0" mnemonicParsing="false" text="Invertera" />
+      <Button layoutX="204.0" layoutY="125.0" mnemonicParsing="false" text="Nollställ" />
+      <Label layoutX="338.0" layoutY="75.0" text="=" textFill="#b90000">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Text fx:id="tarningSummaField" layoutX="353.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="30.136716276407242" />
+    </children>
+</AnchorPane>

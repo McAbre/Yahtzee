@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="508.0" prefWidth="329.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111">
+   <children>
+      <ChoiceBox fx:id="chatMessageMenu" layoutY="2.0" prefHeight="25.0" prefWidth="345.0" />
+      <TextArea fx:id="chatTextArea" layoutY="27.0" prefHeight="479.0" prefWidth="237.0" />
+      <ListView fx:id="chatUsersList" layoutX="237.0" layoutY="27.0" prefHeight="479.0" prefWidth="108.0" />
+   </children>
+</AnchorPane>
