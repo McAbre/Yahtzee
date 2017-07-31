@@ -90,7 +90,9 @@
         <menus>
           <Menu mnemonicParsing="false" text="Arkiv">
             <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
+              <MenuItem mnemonicParsing="false" text="Join game" />
+                  <MenuItem mnemonicParsing="false" text="Close" />
+                  <MenuItem mnemonicParsing="false" text="Start game" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Chat">
